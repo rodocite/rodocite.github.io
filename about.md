@@ -1,10 +1,9 @@
 ---
 layout: page
-title: About
+title: Hello. I'm Rodo.
 permalink: /about/
 ---
 
-####Hello. I'm Rodo.
 I'm a software engineer from MakerSquare's first Los Angeles cohort. In my previous career, I was lead operating engineer for Good Samaritan Hospital's (LA) plant operations and engineering department.
 
 I really like working with Javascript, React, Node, and Firebase.
