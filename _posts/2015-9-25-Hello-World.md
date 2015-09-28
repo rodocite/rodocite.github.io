@@ -5,7 +5,7 @@ title: Hello World
 
 Hello, I'm Rodo. I'm a software engineer from [MakerSquare's](http://www.makersquare.com/) first Los Angeles cohort and this is my technical blog. I thought it would be a great to start one now since I didn't have time during the course. Here's what I have planned:
 
-* Redux - We were advised not to commit to projects during the job hunt (so we can totally just focus on getting jobs), but since my thesis project was built on React, I felt that I should take advantage of that momentum and learn Redux and Falcor.
+* Redux - We were advised not to commit to projects during the job hunt (so we can totally just focus on getting jobs), but since my thesis project was built on React, I felt that I should take advantage of that momentum and learn [Redux](https://github.com/rackt/redux) and [Falcor](https://github.com/Netflix/falcor).
 
 * I will continue writing about my experiences at MakerSquare. Before the course, I had a blog detailing my preparation for the technical interview process, but I took it down since I felt it would become a distraction.
 
