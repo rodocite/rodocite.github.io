@@ -13,6 +13,4 @@ Hello world, I'm Rodo, a software engineer from [MakerSquare's](http://www.maker
 
 * My initial impressions about the job market in Los Angeles versus San Francisco, having worked with extremely new technology for my thesis project (React and ES6). You can find the team repo for that project here: https://github.com/team-scrb/artwlk/tree/dev
 
-I have a lot of housekeeping to do during this transition from an 'accelerated software engineering bootcamp' back to normal life. Feel free to [contact me](http://rodocite.github.io/about/) if you're curious about my experience. I know that's something I get a lot of questions about.
-
-It feels great to be done!
+Feel free to [contact me](http://rodocite.github.io/about/) if you're curious about my experiences at MakerSquare. It feels great to be done!
