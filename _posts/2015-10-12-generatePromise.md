@@ -1,19 +1,19 @@
 ---
 layout: post
-title: generatePromise
+title: generatePromise( )
 ---
 I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed promise. I thought it might be useful for people who want to play around with promises.
 
-## generatePromise( )
 There are four optional arguments:
-* `resolveProbability` - Accepts values from 0-1. It is the probability a promise will resolve.
+
+* `resolveProbability` - Accepts values from 0-1. The probability the promise will resolve.
 * `minTime` - Minimum time in milliseconds the promise will resolve.
 * `maxTime` - Maximum time in milliseconds the promise will resolve.
 * `mockData` - Custom data argument in case you want to generate a promise with data similar to what you will expect.
 
 `generatePromise` will always resolve within 1000ms when no parameters are passed in.
 
-```
+```javascript
 var generatePromise = function(resolveProbability, minTime, maxTime, mockData) {
   if (resolveProbability === undefined || resolveProbability === null) {
     resolveProbability = 1;
@@ -47,7 +47,7 @@ var generatePromise = function(resolveProbability, minTime, maxTime, mockData) {
 ### Example
 
 #### For single promises
-```
+```javascript
 generatePromise(.3)
 .then(function(result) {
   console.log(result);
@@ -58,7 +58,7 @@ generatePromise(.3)
 ```
 
 #### For Promise.all
-```
+```javascript
 var promiseArray = [];
 var myJSON = {hello: 'world'};
 
