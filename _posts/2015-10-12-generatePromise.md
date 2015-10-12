@@ -2,7 +2,7 @@
 layout: post
 title: generatePromise( )
 ---
-I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed promise. I thought it might be useful for people who want to play around with promises.
+I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed promise. I thought it might be useful for people who want to play around with promises-- just paste the code block into your code.
 
 There are four optional arguments:
 
@@ -13,6 +13,7 @@ There are four optional arguments:
 
 `generatePromise` will always resolve within 1000ms when no parameters are passed in.
 
+### Code
 ```javascript
 var generatePromise = function(resolveProbability, minTime, maxTime, mockData) {
   if (resolveProbability === undefined || resolveProbability === null) {
