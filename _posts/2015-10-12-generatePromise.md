@@ -1,8 +1,8 @@
 ---
 layout: post
-title: generatePromise( )
+title: mockPromise( )
 ---
-I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed promise. I thought it might be useful for people who want to play around with promises-- just paste the code block into your code. Keep in mind `console.error` doesn't work in [repl.it](https://repl.it)
+I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed mock promise. I thought it might be useful for people who want to play around with promises-- just paste the code block into your code. Keep in mind `console.error` doesn't work in [repl.it](https://repl.it)
 
 There are four optional arguments:
 
@@ -11,11 +11,11 @@ There are four optional arguments:
 * `maxTime` - Maximum time in milliseconds the promise will resolve.
 * `mockData` - Custom data argument in case you want to generate a promise with data similar to what you will expect.
 
-`generatePromise` will always resolve within 1000ms when no parameters are passed in.
+`mockPromise` will always resolve within 1000ms when no parameters are passed in.
 
 ### Code
 ```javascript
-var generatePromise = function(resolveProbability, minTime, maxTime, mockData) {
+var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
   if (resolveProbability === undefined || resolveProbability === null) {
     resolveProbability = 1;
   }
@@ -49,7 +49,7 @@ var generatePromise = function(resolveProbability, minTime, maxTime, mockData) {
 
 #### For single promises
 ```javascript
-generatePromise(.3)
+mockPromise(.3)
 .then(function(result) {
   console.log(result);
 })
@@ -66,7 +66,7 @@ var promiseArray = [];
 var myJSON = {hello: 'world'};
 
 for(var i = 0; i < 10; i++) {
-  promiseArray.push(generatePromise(1, 1000, 5000, myJSON));
+  promiseArray.push(mockPromise(1, 1000, 5000, myJSON));
 }
 
 Promise.all(promiseArray)
