@@ -13,7 +13,7 @@ There are four optional arguments:
 
 `generatePromise` will always resolve within 1000ms when no parameters are passed in.
 
-```
+```javascript
 var generatePromise = function(resolveProbability, minTime, maxTime, mockData) {
   if (resolveProbability === undefined || resolveProbability === null) {
     resolveProbability = 1;
