@@ -55,6 +55,8 @@ generatePromise(.3)
 .catch(function(error) {
   console.error(error);
 });
+
+// -> Promise failed to resolve. 586ms
 ```
 
 #### For Promise.all
@@ -73,4 +75,17 @@ Promise.all(promiseArray)
 .catch(function(error) {
   console.error(error);
 });
+
+/* 
+  ->  [ { data: { hello: 'world' }, time: '4054ms' },
+        { data: { hello: 'world' }, time: '2894ms' },
+        { data: { hello: 'world' }, time: '2859ms' },
+        { data: { hello: 'world' }, time: '2594ms' },
+        { data: { hello: 'world' }, time: '4797ms' },
+        { data: { hello: 'world' }, time: '1181ms' },
+        { data: { hello: 'world' }, time: '1061ms' },
+        { data: { hello: 'world' }, time: '3013ms' },
+        { data: { hello: 'world' }, time: '3158ms' },
+        { data: { hello: 'world' }, time: '1651ms' } ]
+*/
 ```
