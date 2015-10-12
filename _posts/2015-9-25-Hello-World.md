@@ -7,6 +7,8 @@ Hello world! I'm Rodo-- a software engineer from [MakerSquare's](http://www.make
 
 * Redux - We were advised not to commit to projects during the job hunt (so we can totally just focus on getting jobs), but since my thesis project was built on React, I felt that I should take advantage of that momentum and learn [Redux](https://github.com/rackt/redux) and [Falcor](https://github.com/Netflix/falcor).
 
+* Reactive programming w/ ReactiveX -- specifically how Observables are used for asynchronous programming.
+
 * I will continue writing about my experiences at MakerSquare. Before the course, I had a blog detailing my preparation for the technical interview process, but I took it down since I felt it would become a distraction.
 
 * A Google Maps API tutorial. I'll highlight some gotcha's for people starting with the API. I got to know it pretty well since three of my projects at MakerSquare used Google Maps and I provided Google Maps support for other teams.
