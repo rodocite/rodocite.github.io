@@ -2,7 +2,7 @@
 layout: post
 title: generatePromise( )
 ---
-I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed promise. I thought it might be useful for people who want to play around with promises-- just paste the code block into your code. Keep in mind 'console.error' doesn't work in [repl.it](https://repl.it).
+I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed promise. I thought it might be useful for people who want to play around with promises-- just paste the code block into your code. Keep in mind 'console.error' doesn't work in [repl.it](https://repl.it)
 
 There are four optional arguments:
 
