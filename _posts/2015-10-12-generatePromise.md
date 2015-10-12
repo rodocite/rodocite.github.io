@@ -19,18 +19,18 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
   if (resolveProbability === undefined || resolveProbability === null) {
     resolveProbability = 1;
   }
-
-  var body = mockData || Math.random().toString(2).substring(25);
-  var id = Math.random().toString(36).substring(2);
-  var randomRange =
-  Math.floor(Math.random()*((maxTime||1000)-(minTime||1)+1))+(minTime||1);
-  var time = Math.round(randomRange);
+  
+  // Creating mock data in case none is passed in
+  var data = mockData || 'Resolved Value';
+  
+  // Picks a random time between minTime and maxTime
+  var time = Math.floor(Math.random()*((maxTime||1000)-(minTime||1)+1))+(minTime||1);
 
   return new Promise(function(resolve, reject) {
     if (Math.random() < resolveProbability) {
       setTimeout(function() {
         var toBeResolved = {
-          data: mockData || {body: body},
+          data: data,
           time: time + 'ms',
         }
         resolve(toBeResolved);
@@ -49,7 +49,7 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
 
 #### For single promises
 ```javascript
-mockPromise(.3)
+mockPromise(.3) // Notice this call will only generate mock promises that resolve 30% of the time
 .then(function(result) {
   console.log(result);
 })
@@ -57,7 +57,10 @@ mockPromise(.3)
   console.error(error);
 });
 
-// -> Promise failed to resolve. 586ms
+/*
+Usually returns -> Promise failed to resolve. 586ms
+Once in a while returns -> { data: { body: '010110001' }, time: '644ms' }
+*/
 ```
 
 #### For Promise.all
