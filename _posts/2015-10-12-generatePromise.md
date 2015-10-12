@@ -47,7 +47,7 @@ var generatePromise = function(resolveProbability, minTime, maxTime, mockData) {
 ### Example
 
 #### For single promises
-```
+```javascript
 generatePromise(.3)
 .then(function(result) {
   console.log(result);
@@ -58,7 +58,7 @@ generatePromise(.3)
 ```
 
 #### For Promise.all
-```
+```javascript
 var promiseArray = [];
 var myJSON = {hello: 'world'};
 
