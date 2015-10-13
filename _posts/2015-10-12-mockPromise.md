@@ -4,7 +4,7 @@ title: mockPromise( )
 ---
 I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed mock promise. I thought it might be useful for people who want to play around with promises-- just paste the code block into your code. Keep in mind `console.error` doesn't work in [repl.it](https://repl.it)
 
-There are four optional arguments:
+There are four **optional** arguments:
 
 * `resolveProbability` - Accepts values from 0-1. The probability the promise will resolve.
 * `minTime` - Minimum time in milliseconds the promise will resolve.
