@@ -45,7 +45,7 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
 
 ### Example
 
-#### For single promises
+#### Single promise
 ```javascript
 mockPromise(.3) // Notice this call will only generate mock promises that resolve 30% of the time
 .then(function(result) {
@@ -61,7 +61,7 @@ Once in a while returns something like this -> { data: { body: 'Resolved Value' 
 */
 ```
 
-#### For Promise.all
+#### Promise.all
 ```javascript
 var promiseArray = [];
 var myJSON = {hello: 'world'};
