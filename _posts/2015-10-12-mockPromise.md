@@ -60,8 +60,8 @@ mockPromise(.3) // Notice this call will only generate mock promises that resolv
 });
 
 /*
-Usually returns -> Promise failed to resolve. 586ms
-Once in a while returns -> { data: { body: '010110001' }, time: '644ms' }
+Usually returns something like this -> Promise failed to resolve. 586ms
+Once in a while returns something like this -> { data: { body: 'Resolved Value' }, time: '644ms' }
 */
 ```
 
