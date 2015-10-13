@@ -30,7 +30,7 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
   return new Promise(function(resolve, reject) {
     if (Math.random() < resolveProbability) {
       setTimeout(function() {
-        var toBeResolved = { data: data, timeOut: timeOut + 'ms' }
+        var toBeResolved = { data: data, timeOut: timeOut + 'ms' };
         resolve(toBeResolved);
       }, timeOut);
 
