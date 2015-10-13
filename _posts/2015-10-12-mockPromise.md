@@ -11,7 +11,7 @@ There are four optional arguments:
 * `maxTime` - Maximum time in milliseconds the promise will resolve.
 * `mockData` - Custom data argument in case you want to generate a promise with data similar to what you will expect.
 
-`mockPromise` will always resolve within 1000ms when no parameters are passed in.
+`mockPromise` will always resolve within 1000ms when no arguments are passed in.
 
 ### Code
 ```javascript
