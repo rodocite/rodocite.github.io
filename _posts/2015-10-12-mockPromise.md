@@ -6,7 +6,7 @@ I was looking a bit deeper into Javascript's native Promises and ended up creati
 
 There are four **optional** arguments:
 
-* `resolveProbability` - Accepts values from 0-1. The probability the promise will resolve.
+* `resolveProbability` - The probability the promise will resolve. 0 rejects all, 1 resolves all, anything in the middle is percentage.
 * `minTime` - Minimum time in milliseconds the promise will resolve.
 * `maxTime` - Maximum time in milliseconds the promise will resolve.
 * `mockData` - Custom data argument in case you want to generate a promise with data similar to what you will expect.
