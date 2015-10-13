@@ -45,15 +45,13 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
 
 #### ES6
 ```javascript
-const mockPromise = 
- (resolveProbability = 1, minTime = 1, maxTime = 1000, mockData = 'Resolved Value') => {
-  const data = mockData || 'Resolved Value';
+const mockPromise = (resolveProbability = 1, minTime = 1, maxTime = 1000, mockData = 'Resolved Value') => {
   const timeOut = Math.floor(Math.random() * (maxTime - minTime + 1)) + minTime;
 
   return new Promise((resolve, reject) => {
     if (Math.random() < resolveProbability) {
       setTimeout(() => {
-        const toBeResolved = { data: data, timeOut: timeOut + 'ms' };
+        const toBeResolved = { data: mockData, timeOut: timeOut + 'ms' };
         resolve(toBeResolved);
       }, timeOut);
 
