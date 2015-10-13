@@ -24,7 +24,7 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
   var data = mockData || 'Resolved Value';
   
   // Picks a random time between minTime and maxTime
-  var time = Math.floor(Math.random()*((maxTime||1000)-(minTime||1)+1))+(minTime||1);
+  var timeOut = Math.floor(Math.random()*((maxTime||1000)-(minTime||1)+1))+(minTime||1);
 
   // Creates a new promise. If the resolve probability is higher than
   // Math.random(), the promise will resolve. If not, it will be rejected.
@@ -33,15 +33,15 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
       setTimeout(function() {
         var toBeResolved = {
           data: data,
-          time: time + 'ms',
+          timeOut: timeOut + 'ms',
         }
         resolve(toBeResolved);
-      }, time);
+      }, timeOut);
 
     } else {
       setTimeout(function() {
-        reject('Promise failed to resolve. ' + time + 'ms');
-      }, time);
+        reject('Promise failed to resolve. ' + timeOut + 'ms');
+      }, timeOut);
     }
   });
 };
