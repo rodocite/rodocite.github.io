@@ -47,6 +47,7 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
 ```javascript
 const mockPromise = 
 (resolveProbability = 1, minTime = 1, maxTime = 1000, mockData = 'Resolved Value') => {
+  resolveProbability === null ? resolveProbability = 1 : null;
   const timeOut = Math.floor(Math.random() * (maxTime - minTime + 1)) + minTime;
 
   return new Promise((resolve, reject) => {
