@@ -26,6 +26,8 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
   // Picks a random time between minTime and maxTime
   var time = Math.floor(Math.random()*((maxTime||1000)-(minTime||1)+1))+(minTime||1);
 
+  // Creates a new promise. If the resolve probability is higher than
+  // Math.random(), the promise will resolve. If not, it will be rejected.
   return new Promise(function(resolve, reject) {
     if (Math.random() < resolveProbability) {
       setTimeout(function() {
