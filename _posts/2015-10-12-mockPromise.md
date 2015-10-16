@@ -2,7 +2,7 @@
 layout: post
 title: mockPromise( )
 ---
-I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed mock promise. I thought it might be useful for people who want to play around with promises or test their application behavior-- just `npm install mock-promise` or alternatively, paste the source block into your code.
+I was looking a bit deeper into Javascript's native Promises and ended up creating a simple helper function that generates a timed mock promise. I thought it might be useful for people who want to play around with promises or test their application behavior-- just `npm install mock-promise` or alternatively, paste the source into your code.
 
 There are four **optional** arguments:
 
