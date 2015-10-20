@@ -18,10 +18,14 @@ var mockPromise = function(resolveProbability, minTime, maxTime, mockData) {
   if (resolveProbability === undefined || resolveProbability === null) {
     resolveProbability = 1;
   }
-  
+
+  if (minTime > maxTime) {
+    console.error('minTime cannot be greater than maxTime');
+  }
+
   // Creating mock data in case none is passed in
   var data = mockData || 'Resolved Value';
-  
+
   // Picks a random time between minTime and maxTime
   var timeOut = Math.floor(Math.random()*((maxTime||1000)-(minTime||1)+1))+(minTime||1);
 
